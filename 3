@@ -1,0 +1,26 @@
+# nested Object
+
+function Get-NestedValue {
+    param (
+        [Parameter(Mandatory = $true)]
+        [System.Collections.Hashtable]$Object,
+
+        [Parameter(Mandatory = $true)]
+        [string]$Key
+    )
+
+    $keys = $Key -split '/'
+    $value = $Object
+
+    foreach ($k in $keys) {
+        if ($value.ContainsKey($k)) {
+            $value = $value[$k]
+        }
+        else {
+            $value = $null
+            break
+        }
+    }
+
+    return $value
+}
