@@ -1,0 +1,9 @@
+We have created virtual machine with most of the required inforamtion as user input, took as parameters.
+
+Before creating VM, I have created all the required resouces that is required for VM:
+Network Security Group
+Public IP
+Virtual Network
+NIC Card
+
+Thanks
