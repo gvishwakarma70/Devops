@@ -1,0 +1,21 @@
+I have created JSON code for 3-tier envionment with below resources:
+
+1. Virtual Network (1 resource):
+ This is the network infrastructure that provides connectivity and isolation for our environment.
+
+2. Subnets (3 resources):
+We have three subnets for each tier: presentation, application, and data.
+
+3. Virtual Machines ( 6 resources):
+ We have 6 virtual machines, 2 for each tier
+ Each tier have 2 virtual machines and use load balancing.
+
+4. Network Interfaces (6 resources):
+ Each virtual machine requires a network interface to connect to the virtual network and subnets.
+
+5. Network Security Groups (3 resources):
+ We use network security groups to control inbound and outbound traffic for each tier.
+
+7. Azure Load Balancers for each tier.
+
+Thanks
